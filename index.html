@@ -1,0 +1,422 @@
+<!-- Identitas -->
+<!-- Nama: EKA SYAMSURI NASUTION -->
+<!-- NIM: 250401010106 -->
+<!-- Kelas: IF-204 -->
+<!-- Pemrograman Web I -->
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Eka Syamsuri Nasution</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Google Fonts (Outfit) -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f1f5f9;
+            font-family: 'Outfit', sans-serif;
+            color: #334155;
+            min-height: 100vh;
+            padding-top: 40px;
+            padding-bottom: 60px;
+        }
+
+        .container {
+            max-width: 800px;
+        }
+
+        /* Card / Section Container */
+        .cv-card {
+            background-color: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.035);
+            margin-bottom: 25px;
+            transition: border-color 0.2s ease;
+        }
+
+        .cv-card:hover {
+            border-color: #cbd5e1;
+        }
+
+        /* Typography */
+        h1 {
+            color: #0f172a;
+            font-weight: 700;
+            font-size: 2.2rem;
+            letter-spacing: -0.03em;
+            margin-bottom: 6px;
+        }
+
+        h2 {
+            color: #0f172a;
+            font-size: 1.4rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            color: #475569;
+            font-size: 1.1rem;
+            font-weight: 400;
+        }
+
+        /* Profile Image */
+        .profile-img-container {
+            width: 130px;
+            height: 130px;
+            margin: 0 auto 20px auto;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid #e2e8f0;
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Text Formatting Highlights */
+        strong {
+            color: #0f172a;
+            font-weight: 600;
+        }
+
+        i {
+            color: #1e40af;
+            font-style: italic;
+        }
+
+        u {
+            text-decoration: none;
+            border-bottom: 1px solid #64748b;
+        }
+
+        mark {
+            background-color: #fef08a;
+            color: #854d0e;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        /* Contact & List Styling */
+        .list-group-item {
+            background-color: #ffffff !important;
+            border: 1px solid #e2e8f0 !important;
+            color: #334155 !important;
+            border-radius: 8px !important;
+            margin-bottom: 10px;
+            padding: 14px 18px !important;
+            transition: all 0.2s ease;
+        }
+
+        .list-group-item:hover {
+            background-color: #f8fafc !important;
+            border-color: #cbd5e1 !important;
+        }
+
+        .contact-icon {
+            width: 26px;
+            height: 26px;
+            margin-right: 12px;
+            object-fit: contain;
+        }
+
+        /* Buttons style */
+        .btn-primary {
+            background-color: #1e40af !important;
+            border: 1px solid #1d4ed8 !important;
+            border-radius: 6px !important;
+            padding: 6px 16px !important;
+            font-weight: 500 !important;
+            font-size: 0.85rem !important;
+            color: #ffffff !important;
+            transition: all 0.2s ease !important;
+        }
+
+        .btn-primary:hover {
+            background-color: #1d4ed8 !important;
+            border-color: #1e40af !important;
+            transform: translateY(-1px);
+        }
+
+        /* Table Styling */
+        .table-responsive {
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+        }
+
+        .table {
+            color: #334155 !important;
+            background-color: #ffffff !important;
+            margin-bottom: 0 !important;
+        }
+
+        .table th {
+            background-color: #f8fafc !important;
+            border: none !important;
+            font-weight: 600;
+            color: #475569 !important;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+            padding: 12px 16px !important;
+            border-bottom: 1px solid #e2e8f0 !important;
+        }
+
+        .table td {
+            border-top: 1px solid #e2e8f0 !important;
+            padding: 12px 16px !important;
+            font-size: 0.9rem;
+            color: #334155 !important;
+        }
+
+        .table tbody tr:hover td {
+            background-color: #f8fafc !important;
+        }
+
+        /* Star Rating */
+        .star-rating {
+            color: #eab308;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+        }
+
+        .skill-name {
+            font-weight: 500;
+            color: #334155;
+        }
+
+        /* Footer */
+        footer p {
+            color: #94a3b8 !important;
+            font-size: 0.85rem;
+            letter-spacing: 0.02em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header Profile -->
+        <div class="cv-card text-center">
+            <div class="profile-img-container">
+                <!-- a. Memiliki image/foto diri -->
+                <img src="foto.jpg.JPG"
+                    alt="PROFIL EKA SYAMSURI NASUTION" class="profile-img">
+            </div>
+            <h1>Eka Syamsuri Nasution</h1>
+            <p class="subtitle mb-0">Civil Servant & Informatics Student</p>
+        </div>
+
+        <!-- Tentang Saya Section -->
+        <!-- b. Minimal terdapat 2 paragraf tentang deskripsi diri -->
+        <!-- d. Memiliki tag-tag untuk Text Formatting (strong, u, i, mark) -->
+        <section id="about" class="cv-card">
+            <h2>Tentang Saya</h2>
+            <p>
+                Halo, saya <strong>Eka Syamsuri Nasution</strong>. Saya berasal dari <u>Sumatera Utara</u> dan saat ini bertugas sebagai Aparatur Sipil Negara
+                di lingkungan <b>Kejaksaan Republik Indonesia</b>. Selain itu, saya juga sedang menempuh pendidikan pada Program Studi Informatika.
+            </p>
+            <p>
+                Saya memiliki ketertarikan pada bidang <i>teknologi informasi</i>,
+                dan analisis data. Saat ini saya juga memiliki
+                pengalaman dalam pengoperasian perangkat intelijen digital dan komunikasi,
+                serta berupaya meningkatkan kompetensi di bidang pemrograman dan teknologi
+                modern sebagai bekal untuk masa depan. Kemampuan beradaptasi dan
+                <mark>semangat belajar yang tinggi</mark> menjadi salah satu nilai yang
+                saya pegang dalam menjalani pekerjaan maupun pendidikan
+            </p>
+        </section>
+
+        <!-- Informasi Kontak Section -->
+        <!-- h. Memiliki minimal 2 list (List 1: Kontak) -->
+        <!-- e. Memiliki minimal 3 link (Email, Telepon, Telegram) -->
+        <!-- f. Memiliki minimal 3 image/gambar (Foto Diri + 3 Logo Kontak) -->
+        <section id="contact" class="cv-card">
+            <h2>Informasi Kontak</h2>
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                    <div class="d-flex align-items-center">
+                        <img src="https://www.freepnglogos.com/uploads/logo-gmail-png/logo-gmail-png-file-gmail-icon-svg-wikimedia-commons-0.png"
+                            alt="Email Logo" class="contact-icon">
+                        <span>Email: ekasyamsuri2407@gmail.com</span>
+                    </div>
+                    <a href="mailto:ekasyamsuri2407@gmail.com" class="btn btn-primary btn-sm mt-2 mt-sm-0">Hubungi</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                    <div class="d-flex align-items-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWCrQMzX0DSxqWFL9kmemdbzSmcVE22mgZs2v6YhOQZw&s"
+                            alt="Phone Logo" class="contact-icon">
+                        <span>Telepon: 0857-6327-6505</span>
+                    </div>
+                    <a href="tel:+6285763276505" class="btn btn-primary btn-sm mt-2 mt-sm-0">Hubungi</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                    <div class="d-flex align-items-center">
+                        <img src="https://static.vecteezy.com/system/resources/previews/023/986/562/non_2x/telegram-logo-telegram-logo-transparent-telegram-icon-transparent-free-free-png.png"
+                            alt="Telegram Logo" class="contact-icon">
+                        <span>Telegram: e_Snas</span>
+                    </div>
+                    <a href="https://t.me/e_Snas" target="_blank"
+                        class="btn btn-primary btn-sm mt-2 mt-sm-0">Hubungi</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Riwayat Pendidikan Section -->
+        <!-- g. Memiliki minimal 2 tabel (Tabel 1: Pendidikan) -->
+        <section id="pendidikan" class="cv-card">
+            <h2>Riwayat Pendidikan</h2>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Tingkat</th>
+                            <th>Nama Sekolah</th>
+                            <th>Tahun</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>SD</td>
+                            <td>MIs Islamiyah Guppi</td>
+                            <td>2011 - 2017</td>
+                        </tr>
+                        <tr>
+                            <td>SMP</td>
+                            <td>MTs Ar - Raudhatul Hasanah</td>
+                            <td>2017 - 2020</td>
+                        </tr>
+                        <tr>
+                            <td>SMA</td>
+                            <td>MAs Ar - Raudhatul Hasanah</td>
+                            <td>2018 - 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Kuliah</td>
+                            <td>ASIA CYBER UNIVERSITY</td>
+                            <td>2025 - Sekarang</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Riwayat Pekerjaan Section -->
+        <!-- g. Memiliki minimal 2 tabel (Tabel 2: Pekerjaan) -->
+        <section id="pekerjaan" class="cv-card">
+            <h2>Riwayat Pekerjaan</h2>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Perusahaan</th>
+                            <th>Posisi / Jabatan</th>
+                            <th>Tahun Kerja</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Kejaksaan Republik Indonesia</strong></td>
+                            <td>Pengelola Penanganan Perkara</td>
+                            <td>2024 - Sekarang</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Kemampuan Section -->
+        <!-- h. Memiliki minimal 2 list (List 2: Kemampuan) -->
+        <section id="kemampuan" class="cv-card">
+            <h2>Kemampuan & Keahlian</h2>
+            <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <span class="skill-name">MICROSOFT OFFICE</span>
+            <span class="star-rating" data-rating="90"></span>
+        </li>
+
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <span class="skill-name">HTML5</span>
+            <span class="star-rating" data-rating="85"></span>
+        </li>
+
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <span class="skill-name">CSS3</span>
+            <span class="star-rating" data-rating="80"></span>
+        </li>
+
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <span class="skill-name">JAVASCRIPT</span>
+            <span class="star-rating" data-rating="75"></span>
+        </li>
+
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <span class="skill-name">BOOTSTRAP</span>
+            <span class="star-rating" data-rating="80"></span>
+        </li>
+
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <span class="skill-name">PENGOPERASIAN PERANGKAT INTELIJEN DIGITAL</span>
+            <span class="star-rating" data-rating="90"></span>
+        </li>
+
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <span class="skill-name">ANALISIS SPEKTRUM FREKUENSI</span>
+            <span class="star-rating" data-rating="85"></span>
+        </li>
+
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <span class="skill-name">PENGOPERASIAN PERANGKAT JAMMER</span>
+            <span class="star-rating" data-rating="85"></span>
+        </li>
+    </ul>
+</section>
+
+        <!-- Footer -->
+        <footer class="text-center mt-4">
+            <p>&copy; 2026 - Kelompok 5</p>
+        </footer>
+    </div>
+
+    <!-- Rating System JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const starRatings = document.querySelectorAll(".star-rating");
+            starRatings.forEach(function (starRating) {
+                const rating = parseFloat(starRating.getAttribute("data-rating")) / 20;
+                let stars = "";
+                for (let i = 0; i < 5; i++) {
+                    if (i < rating) {
+                        stars += "&#9733;"; // Bintang penuh
+                    } else {
+                        stars += "&#9734;"; // Bintang kosong
+                    }
+                }
+                starRating.innerHTML = stars;
+            });
+        });
+    </script>
+
+    <!-- Bootstrap JS Dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
